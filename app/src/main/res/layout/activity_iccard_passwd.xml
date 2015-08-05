@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_purple" >
+
+    <include layout="@layout/common_topbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:background="@color/white">
+        
+        <EditText 
+            android:id="@+id/old_passwd"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:hint="原始密码"
+            style="@style/login_edit"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray" />
+        
+        <EditText 
+            android:id="@+id/new_passwd"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:hint="新密码"
+            style="@style/login_edit"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray" />
+        
+        <EditText 
+            android:id="@+id/new_passwd2"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:hint="重复新密码"
+            style="@style/login_edit"/>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/ch_pwd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="修改密码"
+        android:background="@drawable/login_btn"
+        style="@style/login_btn_style"/>
+</LinearLayout>

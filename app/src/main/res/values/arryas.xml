@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="write_card">
+        <item>安装卡</item>
+        <item>维修卡</item>
+        <item>提取数据卡</item>
+    </string-array>
+    
+    <string-array name="read_card">
+        <item>读维修2卡</item>
+        <item>读用户卡</item>
+    </string-array>
+</resources>

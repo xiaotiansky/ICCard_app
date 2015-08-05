@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_card_layout_left">10.0dip</dimen>
+    <dimen name="common_card_layout_right">10.0dip</dimen>
+    <dimen name="common_listitem_singleline_high">50.0dip</dimen>
+    
+    <!-- text size -->
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_middle">12sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_bigest">30sp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+
+    <!-- action bar -->
+    <dimen name="action_bar_height">60dp</dimen>
+
+    <!-- textview -->
+    <dimen name="textview_horizontal_margin">10dp</dimen>
+    <dimen name="textview_vertical_margin">3dp</dimen>
+    <dimen name="textview_vertical_margin_large">3dp</dimen>
+
+    <!-- layout -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="layout_horizontal_margin">15dp</dimen>
+    <dimen name="layout_horizontal_margin_large">30dp</dimen>
+    <dimen name="layout_vertical_margin">20dp</dimen>
+    <dimen name="layout_vertical_margin_small">10dp</dimen>
+
+    <!-- line -->
+    <dimen name="line_height">1px</dimen>
+    
+</resources>

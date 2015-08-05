@@ -1,0 +1,100 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.whut.gasmanagement"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ZvxRaFkO7I0IQj3E36ucvGM9" />
+        
+        <!-- activity -->
+        <activity android:name="org.whut.activities.LoadingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.whut.activities.LoginActivity" />
+        <activity android:name="org.whut.activities.MainActivity" />
+        <activity android:name="org.whut.activities.DeviceInstallActivity" />
+        <activity android:name="org.whut.activities.DeviceRepairActivity" />
+        <activity android:name="org.whut.activities.GetConfigFileActivity" />
+        <activity android:name="org.whut.activities.WriteCardActivity" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity android:name="org.whut.activities.UpdateActivity" />
+        <activity android:name="org.whut.activities.SettingActivity" />
+        <activity android:name="org.whut.activities.InstallOperationActivity" />
+        <activity android:name="org.whut.activities.UploadActivity" />
+        <activity android:name="org.whut.activities.ModeChooseActivity" />
+        <activity android:name="org.whut.activities.RepairOperationActivity" />
+        <activity android:name="org.whut.activities.ChangeGasMeterActivity" />
+        <activity android:name="org.whut.activities.NotChangeGasMeterActivity" />
+        <activity android:name="org.whut.activities.UploadForRepairActivity" />
+        <activity android:name="org.whut.activities.ICCardPasswdActivity" />
+        <activity android:name="org.whut.activities.AboutActivity" />
+        <activity android:name="org.whut.activities.AddInstallActivity" />
+        <activity android:name="org.whut.activities.AddRepairActivity" />
+        <activity android:name="org.whut.activities.CardInfoActivity" />
+        <activity android:name="org.whut.activities.WriteCardOnlineActivity" />
+        <activity android:name="org.whut.activities.WebServicePropertyActivity" />
+
+        <!-- service -->
+        <service android:name="org.whut.services.WriteCardService" />
+        <service android:name="org.whut.services.ScanBarCodeService" />
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

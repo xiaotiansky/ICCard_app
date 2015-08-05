@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple">
+
+    <include layout="@layout/common_topbar_install_operation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tv_meter_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/meter_id"
+            android:paddingLeft="10dp"
+            android:background="#fff"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc" />
+
+        <EditText
+            android:id="@+id/tv_meter_info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/meter_info"
+            android:paddingLeft="10dp"
+            android:background="#fff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:background="@drawable/activity_install_operation_btn_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="#ffffffff"
+        android:textSize="18.0dip" />
+</LinearLayout>

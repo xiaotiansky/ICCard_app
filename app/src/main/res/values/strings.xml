@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">燃气助手</string>
+    <string name="contentDescription">图片</string>
+
+    <string name="login">登	录</string>
+    <string name="username">用户名</string>
+    <string name="password">密\t 码</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    
+    <string name="main_title">功能选择</string>
+    <string name="device_install_title">安装任务</string>
+    <string name="device_repair_title">维修任务</string>
+    <string name="get_config_file">查询</string>
+    <string name="card_title">IC卡操作</string>
+    <string name="install_operation_title">条码扫描</string>
+    <string name="install_operation_title_after_scan">卡表安装</string>
+	<string name="repair_operation_title">故障判定</string>
+	<string name="repair_detail_title">维修详情</string>
+	<string name="repair_change_meter">换表操作</string>
+	<string name="scan_barcode_operation">请点击上方图标开启条码扫描，扫描过程中请将扫描头对准卡表条码</string>
+	<string name="upload_title">结果上传</string>
+	<string name="mode_choose_title">模式选择</string>
+	
+	<string name="card_read">读卡</string>
+	<string name="card_write">写卡</string>
+	
+	<string name="setting">设置</string>
+	<string name="card_passwd_settings">修改IC卡密码</string>
+	<string name="about">关于</string>
+    <string name="webService">修改WebService地址</string>
+	<string name="version_title">Version 1.0</string>
+	<string name="about_intro">燃气助手是由武汉蓝焰自动化有限公司研发的一款天然气表安装，维护软件。</string>
+    <string name="about_team">Team：QA, WHUT(WUHAN)</string>
+    <string name="about_project_address">Project Site：http://www.wuhanly.com/</string>
+    
+    <string name="add">添加</string>
+    <string name="address">地址</string>
+
+    <string name="add_install">添加安装任务</string>
+    <string name="add_repair">添加维修任务</string>
+
+    <string name="new_code">新表条码</string>
+    <string name="old_code">旧表条码</string>
+    <string name="new_reading">新表读数</string>
+    <string name="old_reading">旧表读数</string>
+
+    <string name="online_write">在线写卡</string>
+    
+    <string name="meter_id">表具编号</string>
+    <string name="meter_info">写卡类型</string>
+
+    <string name="web_ip">URL/IP地址(eg:http(s)://192.128.1.100)</string>
+    <string name="web_port">端口号</string>
+
+    <string name="submit">提交</string>
+</resources>

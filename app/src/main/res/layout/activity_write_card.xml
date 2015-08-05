@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_topbar_main" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffededed" >
+
+        <RelativeLayout
+            android:id="@+id/tv_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/result_choose_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:padding="5.0dip"
+                android:text="请根据实际读写操作需求，如实选择IC卡的类型："
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/type_write"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hint"
+            android:background="@drawable/activity_panel_background"
+            android:clickable="true"
+            android:paddingBottom="16.0dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:paddingTop="16.0dip" >
+
+            <TextView
+                android:id="@+id/tv_write_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="制作IC卡"
+                android:textColor="#ff333333"
+                android:textSize="15.0dip" />
+
+            <ImageView
+                android:id="@+id/type_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/activity_loc_arrow" />
+
+            <TextView
+                android:id="@+id/write_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@id/type_arrow"
+                android:layout_toRightOf="@id/tv_write_type"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#ff676767"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/type_read"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_write"
+            android:background="@drawable/activity_panel_background"
+            android:clickable="true"
+            android:paddingBottom="16.0dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:paddingTop="16.0dip" >
+
+            <TextView
+                android:id="@+id/tv_read_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="读取IC卡"
+                android:textColor="#ff333333"
+                android:textSize="15.0dip" />
+
+            <ImageView
+                android:id="@+id/update_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/activity_loc_arrow" />
+
+            <TextView
+                android:id="@+id/read_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@id/update_arrow"
+                android:layout_toRightOf="@id/tv_read_type"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#ff676767"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/activity_install_operation_btn_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/card_read"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>
